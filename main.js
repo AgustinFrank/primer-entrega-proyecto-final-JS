@@ -1,4 +1,4 @@
-class zapatillas {
+/*class zapatillas {
   constructor(nombre, categoria, precio, disponibilidad) {
     this.nombre = nombre;
     this.categoria = categoria;
@@ -59,4 +59,43 @@ while (cargarZapa == "si") {
   agregarZapatilla();
   cargarZapa = prompt("¿quiere agregar una zapatilla?");
 }
-console.log(inventario);
+console.log(inventario);*/
+
+const productos = [
+  { id: 1, name: "Nike AF1", category: "street", price: 35000 },
+  { id: 2, name: "low DC", category: "street", price: 22000 },
+  { id: 3, name: "Adidas L3", category: "deportes", price: 24500 },
+  { id: 4, name: "Fila Z1", category: "deportes", price: 21500 },
+  { id: 5, name: "Nike SB", category: "street", price: 22000 },
+  { id: 6, name: "Toppper handball", category: "deportes", price: 17200 },
+  { id: 7, name: "Nike AIRMAX", category: "street", price: 27500 },
+];
+
+function mostrarProductos() {
+  let html = " ";
+  for (let i = 0; i < productos.length; i++) {
+    html =
+      html +
+      `  <div>
+      <h3>${productos[i].name}</h3>
+      <p>Categoria:${productos[i].category}</p>
+      <p>Precio:$ ${productos[i].price}</p>
+      <p> id: ${productos[i].id}</p>
+      </div>
+       `;
+  }
+  document.getElementById("productos").innerHTML = html;
+}
+
+mostrarProductos();
+
+//FORMULARIO DE CONTACTO
+
+function controlarFormulario() {
+  const nombreYApellido = document.getElementById("nombreYApellido").value;
+  const email = document.getElementById("email").value;
+  const contraseña = document.getElementById("contrasena").value;
+  const comentario = document.getElementById("comentario").value;
+  document.getElementById("resultado").innerHTML =
+    "Gracias por crear su cuenta " + nombreYApellido;
+}
