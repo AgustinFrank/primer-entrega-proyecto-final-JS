@@ -61,7 +61,7 @@ while (cargarZapa == "si") {
 }
 console.log(inventario);*/
 
-const productos = [
+/*const productos = [
   { id: 1, name: "Nike AF1", category: "street", price: 35000 },
   { id: 2, name: "low DC", category: "street", price: 22000 },
   { id: 3, name: "Adidas L3", category: "deportes", price: 24500 },
@@ -87,7 +87,7 @@ function mostrarProductos() {
   document.getElementById("productos").innerHTML = html;
 }
 
-mostrarProductos();
+mostrarProductos();*/
 
 //FORMULARIO DE CONTACTO
 
